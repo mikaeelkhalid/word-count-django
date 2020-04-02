@@ -1,0 +1,18 @@
+<div style="text-align: center;">
+
+    <h1>Word Count 1.0</h1>
+    <hr>
+    <a href="{% url 'home' %}"> Home </a> - <a href="{% url 'about' %}"> About </a>
+    <hr>
+
+    <form action="{% url 'count' %}">
+
+        <textarea name="fulltext" id="" cols="40" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Count!" />
+        <hr>
+        <p>Mikaeel K.</p>
+
+    </form>
+
+</div>

@@ -1,0 +1,17 @@
+<div style="text-align: center;">
+
+    <h1>Word Count 1.0</h1>
+    <hr>
+    <a href="{% url 'home' %}"> Home </a> - <a href="{% url 'about' %}"> About </a>
+    <hr>
+
+    <b>Your Entered Text:</b> {{fulltext}}
+    <br><br>
+    <b>Total Words in Your Text:</b> {{count}}
+    <br><br>
+    <b>Word Count Occurance:</b> <br>{% for word, counttotal in sortedwords %} {{word}} - {{counttotal}}
+    <br> {% endfor %}
+    <hr>
+    <p>Mikaeel K.</p>
+
+</div>
